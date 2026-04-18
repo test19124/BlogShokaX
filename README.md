@@ -1,45 +1,43 @@
-[English](./README.md) | [中文](./README_zh-cn.md)
-
 # Astro Blog ShokaX
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/theme-shoka-x/astro-blog-shokax)
-[![Deploy with EdgeOne Pages](https://cdnstatic.tencentcs.com/edgeone/pages/deploy.svg)](https://edgeone.ai/pages/new?repository-url=https://github.com/theme-shoka-x/astro-blog-shokax)
+[![使用 EdgeOne Pages 部署](https://cdnstatic.tencentcs.com/edgeone/pages/deploy.svg)](https://edgeone.ai/pages/new?repository-url=https://github.com/theme-shoka-x/astro-blog-shokax)
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/theme-shoka-x/astro-blog-shokax)
 
-This project is a reconstruction of [Hexo Theme ShokaX](https://github.com/theme-shoka-x/hexo-theme-shokaX) on Astro, built with Astro + Svelte 5 + UnoCSS.
+这是 [Hexo Theme ShokaX](https://github.com/theme-shoka-x/hexo-theme-shokaX) 在 Astro 上的重构版本，使用 Astro + Svelte 5 + UnoCSS 技术栈
 
-[<img width="1920" height="911" alt="Three-column preview" src="https://github.com/user-attachments/assets/b8ad5bbe-43a3-4c49-a32f-45ba5ba3dcd1" />](https://preview.astro.kaitaku.xyz/)
+[<img width="1920" height="911" alt="三栏式预览" src="https://github.com/user-attachments/assets/b8ad5bbe-43a3-4c49-a32f-45ba5ba3dcd1" />](https://preview.astro.kaitaku.xyz/)
 
-Two-column layout:
-<img width="1920" height="911" alt="Two-column preview" src="https://github.com/user-attachments/assets/df01c009-68cf-4bb3-9148-ff61afc0d159" />
+双栏式布局：
+<img width="1920" height="911" alt="双栏式预览" src="https://github.com/user-attachments/assets/df01c009-68cf-4bb3-9148-ff61afc0d159" />
 
-🌐 Live preview (three-column): [https://preview.astro.kaitaku.xyz/](https://preview.astro.kaitaku.xyz/)
+🌐 在线预览（三栏式）：[https://preview.astro.kaitaku.xyz/](https://preview.astro.kaitaku.xyz/)
 
-## ✨ Features
+## ✨ 功能特性
 
-- Elegant UI that continues the original ShokaX design language
-- Built-in light / dark theme support
-- Support for both two-column and three-column layouts
-- Interactive blog installation, configuration, and usage through HyC
-- Extensible plugin system powered by Hyacine Plugins
-- Rich Markdown / MDX enhancement features
-- Tag cloud, timeline view, and category tree support
-- Backend-free, high-performance full-text search powered by Pagefind
-- Standalone pages for friends links, article statistics, and about
-- Built-in moments / status updates support
-- Automatically generated smart table of contents (ToC)
-- AI summaries and AI article recommendations powered by HyC
-- Build-time post encryption based on AES-256-GCM and PBKDF2
-- Performance-first design and development philosophy
-- More extension capabilities — see the documentation for details
+- 延续 ShokaX 原版设计语言的优雅界面
+- 内置日间 / 暗夜主题模式
+- 双栏和三栏双布局支持
+- 通过 Hyc 交互式安装、配置和使用博客
+- 基于 Hyacine Plugins 的可扩展插件体系
+- 丰富的 Markdown / MDX 增强特性
+- 支持标签云、时间线视图与分类树结构
+- 基于 Pagefind 的无后端高性能全文搜索
+- 独立的友链、文章统计和关于页面支持
+- 开箱即用的说说 / 动态支持
+- 自动生成智能目录（ToC）
+- HyC 赋能的 AI 摘要和 AI 文章推荐
+- 基于 AES-256-GCM 和 PBKDF2 的构建时文章加密
+- 以性能优先为核心的设计与开发理念
+- 更多扩展能力，详见文档说明
 
-## 📦 Installation
+## 📦 安装
 
-We recommend using [Bun](https://bun.sh/) to run this project. Compatibility with Node.js is not guaranteed.
+本项目建议使用 [Bun](https://bun.sh/) 运行，不保证与 Nodejs 的兼容性
 
-You can clone this repository directly to get started (and maybe drop us a Star 😜), or use the [interactive installation flow provided by HyC](https://docs.astro.kaitaku.xyz/start/guides/).
+你可以直接将本仓库 Clone 到本地（并为我们点一个 Star 😜），来开始使用。也可使用[由 Hyc 提供的交互式安装支持](https://docs.astro.kaitaku.xyz/start/guides/)
 
-Quick start:
+快速开始：
 
 ```bash
 git clone https://github.com/theme-shoka-x/astro-blog-shokax
@@ -48,157 +46,153 @@ cd astro-blog-shokax
 
 bun install
 
-# Start the development server
+# 启动开发服务器
 bun run dev
 
-# Build for production
+# 构建生产版本
 bun run build
 ```
 
-Your site is now ready to use. If you'd like to customize it, check the full documentation for the next step: [ShokaX Astro Docs](https://docs.astro.kaitaku.xyz/start/guides/)
+现在，你的站点已经可用了。如果你想自定义你的站点，查看完整文档来进行下一步：[ShokaX Astro 文档](https://docs.astro.kaitaku.xyz/start/guides/)
 
-## 📂 Project Structure
+## 📂 项目结构
 
-This project follows the standard directory conventions of Astro 5 and Vite:
+该项目遵循 Astro 5 和 Vite 的目录规范标准：
 
 ```tree
 astro-blog-shokax
-├── src/                          # Source files
-│   ├── assets/                   # Images / fonts
-│   │   ├── fonts/                # Fonts
-│   │   ├── images/               # 🌟 Cover images
-│   │   ├── icons/                # Part of RemixIcon assets (used for Shadow DOM)
-│   │   ├── avatar.avif           # 🌟 Site owner avatar
-│   ├── components/               # Astro / Svelte components
-│   ├── content/                  # Content outside collections
-│   │   ├── friend-rules.md       # 🌟 Friends link rules
-│   ├── i18n/                     # i18n system
-│   ├── layouts/                  # Page layouts
-│   ├── moments/                  # 🌟 Moments / status content collection
-│   ├── pages/                    # Route pages
-│   ├── posts/                    # 🌟 Post content collection
-│   ├── remark-plugins/           # Markdown extensions
-│   ├── stores/                   # Global stores
-│   ├── styles/                   # Non-component stylesheets
-│   ├── toolkit/                  # Utilities
-│   ├── content.config.ts         # Content collections config
-│   ├── theme.config.ts           # 🌟 Theme configuration
-│   ├── theme.config.template.txt # HyC interactive config template
-├── hyacine.yml                   # HyC configuration
-├── astro.config.mjs              # 🌟 Astro configuration
+├── src/                          # 源文件文件夹
+│   ├── assets/                   # 图片/字体存放处
+│   │   ├── fonts/                # 字体
+│   │   ├── images/               # 🌟 封面图片
+│   │   ├── icons/                # RemixIcon 的部分图标（用于 Shadow DOM）
+│   │   ├── avatar.avif           # 🌟 站点所有者头像
+│   ├── components/               # Astro / Svelte 组件
+│   ├── content/                  # 不属于内容集合的内容
+│   │   ├── friend-rules.md       # 🌟 友链规则
+│   ├── i18n/                     # i18n 系统
+│   ├── layouts/                  # 页面布局
+│   ├── moments/                  # 🌟 动态/说说内容集合
+│   ├── pages/                    # 页面路由
+│   ├── posts/                    # 🌟 文章内容集合
+│   ├── remark-plugins/           # Markdown 扩展
+│   ├── stores/                   # 全局 Store
+│   ├── styles/                   # 非组件化样式表
+│   ├── toolkit/                  # 工具函数
+│   ├── content.config.ts         # 内容集合配置文件
+│   ├── theme.config.ts           # 🌟 主题配置文件
+│   ├── theme.config.template.txt # HyC 交互式配置模板
+├── hyacine.yml                   # HyC 配置文件
+├── astro.config.mjs              # 🌟 Astro 配置文件
 
-# Items marked with 🌟 are the key files/folders you will likely care about when using this theme
+# 带有 🌟 的是使用本主题时需要关注的文件夹和文件
 ```
 
-## ⚙️ HyC Capabilities
+## ⚙️ HyC 能力
 
-ShokaX includes `@hyacine/cli` and `@hyacine/core` and provides the following capabilities:
+ShokaX 内置 @hyacine/cli 和 @hyacine/core 提供如下能力：
 
-- AI recommendations and summaries
-- Interactive installation and configuration
-- Lightweight local CMS
-- Blog extension plugins
+- AI 推荐和总结
+- 交互式安装和配置
+- 本地轻 CMS
+- 博客扩展插件
 
 ```shell
-# Global installation is recommended, or you can use `bun hyc` later instead of `hyc`
+# 建议全局安装，或者后续也可使用 bun hyc 而非 hyc
 bun add @hyacine/cli -g
 
-hyc sync # Sync database and content collections
+hyc sync # 同步数据库和内容集合
 
-# Create a new post
-hyc new "Title"
+# 创建新文章
+hyc new "标题"
 
-# Publish a post
-hyc publish "title/slug/file-name"
+# 发布文章
+hyc publish "标题/slug/文件名"
 
-# Sort posts by category
+# 按分类整理文章
 hyc sort category
 
-# Start the local CMS and interactive configuration
+# 启动本地 CMS 和交互式配置
 hyc serve
-# Visit the official console at https://hyc.kaitaku.xyz/ to get started
+# 访问官方控制台 https://hyc.kaitaku.xyz/ 以开始使用
 
-# HyC plugins are currently in Alpha and related documentation is still in progress
-# This theme currently enables the Site-Uptime (site age) and Mouse-firework (click effect) plugins by default
-# See hyacine.plugin.ts for details
+# HyC 插件当前处于 Alpha 阶段，相关文档仍在准备
+# 目前本主题默认启用了 Site-Uptime（建站时间）和 Mouse-firework（点击特效）插件
+# 可参见 hyacine.plugin.ts
 ```
 
-## 🚀 Performance
+## 🚀 性能
 
-We use [LHCI](https://github.com/GoogleChrome/lighthouse-ci) to test page performance, and each commit includes test results. Our minimum requirement is Lighthouse desktop Performance 92+, and in practice the score is usually around 98–100:
+我们使用 [LHCI](https://github.com/GoogleChrome/lighthouse-ci) 测试页面性能，每次提交下都有测试结果。我们对页面性能的最低要求为 Lighthouse 桌面 Performance 92+，实际表现在 98-100 之间：
 
 <img width="1702" height="952" alt="lighthouse" src="https://github.com/user-attachments/assets/05b8768f-5f04-4204-8f4f-7f2f6f30e102" />
 
-## 📦 Versioning
+## 📦 版本控制
 
-ShokaX Astro follows **SemVer** for version control. Each release will have a corresponding **GitHub Release** and **Git tag** (following the `vX.Y.Z` format). You can update or roll back to a specific version by checking out the corresponding tag.
+ShokaX Astro 遵循 SemVer 进行版本控制，每次版本发布后会设置对应的 Github Releases 和 Git tag（遵循vX.Y.Z格式），你可以通过 checkout 到特定 tag 来更新或回退版本
 
-In this section, **API** refers to publicly exposed project scripts (such as `build`, `dev`, etc.), configurations and configuration options, and external TypeScript APIs.
+本部分中 API 指代对外暴露的项目脚本（`build`、`dev`等）、配置及配置项和对外 TS API 等内容
 
-Specifically, our version numbers follow the format `x.y.z` and adhere to the following release strategy:
+具体而言：我们的版本号使用`x.y.z`格式，并遵循如下发布策略：
 
-### 1. `x`: Major Version
+### x：主要版本
 
-This version includes changes such as:
+该版本包括的更改有：
 
-1. Removal of deprecated APIs
-2. Breaking changes to the underlying architecture or core system
-3. Changes that are also allowed in minor or patch versions
+1. 已弃用 API 的删除
+2. 底层架构或核心程序的破坏性修改
+3. 次要版本或补丁版本允许存在的更改
 
-When upgrading a **major version**, existing projects may fail to run without modification. Additionally, if you have modified the source code of ShokaX Astro yourself, it may cause large-scale Git conflicts that must be resolved manually.
+主要版本升级时，现有项目若未经修改可能会无法运行，且若你自行修改了 ShokaX Astro 的源代码则可能导致大规模 Git 冲突，需自行解决
 
-### 2. `y`: Minor Version
+### y：次要版本
 
-This version includes changes such as:
+该版本包括的更改有：
 
-1. Marking specific APIs as **deprecated** (deprecated APIs will only be removed in the next major version)
-2. Introducing new features
-3. Large-scale internal refactoring that does **not** affect the public API
-4. Changes that are also allowed in patch versions
+1. 宣布特定 API 进入弃用状态（被弃用 API 仅会在下一个主要版本中删除）
+2. 加入新功能
+3. 对内部实现进行不影响公共 API 的较大规模重构
+4. 补丁版本允许存在的更改
 
-Upgrading a **minor version** will not affect compatibility with existing projects. Existing projects can upgrade without modification.
+次要版本升级时，不会影响对现有项目的兼容性，现有项目无需修改即可升级。
 
-### 3. `z`: Patch Version
+### z：补丁版本
 
-This version includes changes such as:
+该版本包括的更改有：
 
-1. Bug fixes
-2. Security vulnerability fixes
-3. Performance improvements
-4. Other small, non-breaking changes
+1. 对现有错误进行修复
+2. 对安全漏洞进行修复
+3. 进行性能优化
+4. 其他非破坏性小规模改动
 
-Upgrading a **patch version** will not affect compatibility with existing projects. Existing projects can upgrade without modification.
+补丁版本升级时，不会影响对现有项目的兼容性，现有项目无需修改即可升级。
 
-### Pre-release Versions
+### 预发布版本
 
-Before releasing a **major version**, we may publish **pre-release versions** to gather feedback and conduct testing for new changes. The pre-release policies are:
+对于主要版本发布前，我们可能会发布预发布版本以收集有关新更改的反馈和进行测试，预发布版本遵循：
 
-1. **`alpha` releases** follow the same strategy as major versions and may introduce breaking changes.
-2. **`beta` releases** follow the strategy of minor versions, but may introduce breaking changes if absolutely necessary.
-3. **`rc` (Release Candidate) releases** follow the strategy of minor versions.
+1. `alpha`版本的发布策略与主要版本一致，允许引入破坏性修改
+2. `beta`版本的发布策略与次要版本一致，但若极为必要仍会引入破坏性修改
+3. `rc`版本的发布策略与次要版本一致
 
-The format of a pre-release version is `x.y.z-alpha.1`, and the precedence order is:
+预发布版本的格式形如`x.y.z-alpha.1`，且遵循`rc` > `beta` > `alpha`的排序。不建议将预发布版本用于生产环境
 
-`rc` > `beta` > `alpha`
+## 🖌️ 三栏式布局
 
-It is **not recommended** to use pre-release versions in production environments.
+我们在 ShokaX Astro 中引入了三栏式布局：
 
-## 🖌️ Three-Column Layout
+<img width="1920" height="911" alt="三栏式预览" src="https://github.com/user-attachments/assets/b8ad5bbe-43a3-4c49-a32f-45ba5ba3dcd1" />
 
-We have introduced a three-column layout in ShokaX Astro:
+右侧边栏中可以配置显示卡片和它们的顺序，目前已经支持的有：
 
-<img width="1920" height="911" alt="Three-column layout preview" src="https://github.com/user-attachments/assets/b8ad5bbe-43a3-4c49-a32f-45ba5ba3dcd1" />
+- 公告
+- 全站搜索
+- 日历
+- 最近动态
+- 随机文章
+- 标签云
 
-You can configure which cards are shown in the right sidebar and in what order. The currently supported cards are:
-
-- Announcement
-- Site search
-- Calendar
-- Recent moments
-- Random posts
-- Tag cloud
-
-You can enable it by editing the configuration file:
+可通过修改配置文件启用：
 
 ```ts
 layout: {
@@ -215,45 +209,45 @@ layout: {
 },
 ```
 
-The right sidebar is shown only on wide screens (desktop). On mobile, the original two-column layout is used.
+右侧边栏中仅在宽屏（桌面端）显示，手机端为原双栏布局
 
-## 🤝 Contributing
+## 🤝 贡献
 
-Pull requests are welcome. The project uses the following workflows to validate changes:
+欢迎提交 PR，本项目会使用以下工作流检查代码：
 
-- Lighthouse CI, with the following thresholds:
+- Lighthouse CI，标准为：
   - Performance >= 0.92
   - Accessibility >= 0.9
-  - Best Practices and SEO >= 0.95
+  - Best Practices 和 SEO >= 0.95
 - CodeQL Scan & Code Quality
-- E2E testing
+- E2E 测试
 - [Lychee](https://lychee.cli.rs/)
 
-If CI does not pass, you can still submit a PR and we will help improve it.
+如果出现未通过 CI 的情况也可提交 PR，我们会协助修改
 
-This project is licensed under AGPL v3.
+本项目采用 AGPL v3 许可证
 
-## 📄 Notes
+## 📄 备注
 
-### About assets and licensing
+### 有关资源与许可证说明
 
-- The main styles and design philosophy of this project are inspired by [Shoka](https://github.com/amehime/hexo-theme-shoka). However, this project is an independent implementation. To pay tribute, the original MIT license of Shoka is included in the `licenses` directory as `LICENSE-shoka`.
-- This project is an independently developed rewrite of [Hexo ShokaX](https://github.com/theme-shoka-x/hexo-theme-shokaX). It does not directly reuse its code or assets. It is maintained directly by the ShokaX project team, which is also why the project uses the ShokaX name.
-- The default avatar image in this project is artwork by [QuAn\_](https://www.pixiv.net/users/6657532). It is included for demonstration purposes only and remains the property of the original author. Please replace it with an asset you are authorized to use before deploying to production.
-- This project uses [Maple Mono](https://font.subf.dev/zh-cn/) and [LXGW WenKai](https://github.com/lxgw/LxgwWenKai) as the default fonts. Both are distributed under the OFL 1.1 license, with license texts available at `licenses/LICENSE-maple-mono.txt` and `licenses/OFL.txt` respectively.
-  During the build process, fonts may be subsetted, converted, and compressed in compliance with OFL 1.1.
-- The default cover images in this project come from [Unsplash](https://unsplash.com/) and are used and distributed under the [Unsplash License](https://unsplash.com/license).
-- The project's own `LICENSE` in the repository root applies only to the code assets in this project. For any non-code assets not covered above or not explicitly identified, the root license does not apply and rights should be considered reserved by the original author.
+- 本项目的主要样式与设计理念来自 [Shoka](https://github.com/amehime/hexo-theme-shoka)，但本项目为独立实现，仅在设计理念与风格上受到启发，出于致敬目的，在`license`目录下放置 Shoka 的原始 MIT 许可证(LICENSE-shoka)
+- 本项目是 [Hexo ShokaX](https://github.com/theme-shoka-x/hexo-theme-shokaX) 的独立自研重写版本，未直接使用其代码与资源，为独立实现，且本仓库由 ShokaX 项目团队直接维护，与 Hexo ShokaX 作者相同，所以本项目使用 ShokaX 作为项目名称
+- 本项目中默认的 avatar 图片为 [QuAn\_](https://www.pixiv.net/users/6657532) 的作品，本项目中该图片仅用于展示，版权归原作者所有，用户需自行确认使用合规性，请在正式部署前使用版权可控的图片替换本图片
+- 本项目使用了 [Maple Mono](https://font.subf.dev/zh-cn/) 和[霞鹜文楷](https://github.com/lxgw/LxgwWenKai) 作为项目的默认字体，两款字体均为 OFL 1.1 许可证，其分发许可证分别为`licenses/LICENSE-maple-mono.txt`和`licenses/OFL.txt`
+  本项目在构建过程中会在遵从 OFL 1.1 许可证的前提下对字体进行子集化、格式转换与压缩
+- 本项目默认使用的 cover 来自 [Unsplash](https://unsplash.com/)，遵循 [Unsplash License](https://unsplash.com/license) 使用与分发
+- 本项目本身（即根目录下的`LICENSE`）只适用于本项目中的代码资源，对于不包含于上述内容中的其他未标明或未知的非代码资产，本项目本身的 LICENSE 不适用，应视为原作者保留所有权
 
-### 🙏 Acknowledgements
+### 🙏 致谢
 
-The ShokaX development team would like to thank every open source project, user, contributor, and developer who has supported ShokaX in the past, present, and future. Without them, this project would not exist.
+ShokaX 开发组向所有 ShokaX 在过去、现在和未来的使用过与可能使用的开源项目与所有 ShokaX 的用户、贡献者和开发者致谢，如果没有他们的支持，我们不可能构建出 ShokaX
 
-These projects in particular have provided tremendous support during development, and we would like to thank them again here (in no particular order):
+其中，这些项目为我们的开发做出了极大的支持，特此再次致谢（随机排列，不分先后）：
 
-- [Astro](https://astro.build/): the foundation of this project
-- [UnoCSS](https://unocss.dev/): a modern atomic CSS engine that completely solved the icon issues that troubled the team for a long time in earlier iterations
-- [Svelte](https://svelte.dev/): the frontend UI framework used in this project, an excellent choice for personal blogs
-- [Mizuki](https://github.com/matsuzaka-yuki/Mizuki): directly inspired the team's Astro migration and provided an excellent example to follow
-- [Bun](https://bun.sh/): the runtime used in this project, fast and delightful to use
-- [Shoka](https://github.com/amehime/hexo-theme-shoka): the origin of ShokaX — without Shoka, ShokaX would not exist
+- [Astro](https://astro.build/)：本项目的基石
+- [UnoCSS](https://unocss.dev/)：现代化的原子 CSS 引擎，彻底解决了在前作中困扰开发组很长时间的图标问题
+- [Svelte](https://svelte.dev/)：本项目的前端 UI 框架，个人博客项目的理想之选
+- [Mizuki](https://github.com/matsuzaka-yuki/Mizuki)：直接启发了开发组进行 Astro 迁移，为我们的迁移提供了极好的榜样
+- [Bun](https://bun.sh/)：本项目使用的运行时，高性能而易用
+- [Shoka](https://github.com/amehime/hexo-theme-shoka)：ShokaX 的起源，没有 Shoka 便不可能有 ShokaX
