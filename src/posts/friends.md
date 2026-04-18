@@ -36,7 +36,7 @@ Q: 李z硕(01) 有谁交朋友吗?
   image: https://i.imgtg.com/2023/04/04/2VcIc.jpg
 {% endlinks %}
 
-## 如何添加友链  
+## 如何添加友链
 
 添加本站链接后，评论/向邮箱`test19124@sina.com` 发送如下内容：
 
